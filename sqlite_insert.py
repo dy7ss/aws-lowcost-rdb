@@ -14,8 +14,6 @@ def lambda_handler(event, context):
     learned_content = ""
     category = ""
     learned_time = ""
-    
-    print(event)
 
     try:
         learned_content = event.get('queryStringParameters').get('learned_content')
